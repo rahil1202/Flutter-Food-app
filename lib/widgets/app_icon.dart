@@ -1,4 +1,3 @@
-import 'package:ecomm_food_app/utils/dimensions.dart';
 import 'package:flutter/cupertino.dart';
 
 class AppIcon extends StatelessWidget {

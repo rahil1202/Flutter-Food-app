@@ -1,4 +1,5 @@
 import 'package:ecomm_food_app/controllers/popular_product_controller.dart';
+// ignore: unused_import
 import 'package:ecomm_food_app/pages/food/popular_food_detail.dart';
 import 'package:ecomm_food_app/routes/route_helper.dart';
 import 'package:ecomm_food_app/widgets/recommended_food_detail.dart';

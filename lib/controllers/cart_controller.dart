@@ -9,12 +9,11 @@ class CartController extends GetxController {
 
   CartController({required this.cartRepo});
 
-  Map<int, CartModel> _items = {};
+  final Map<int, CartModel> _items = {};
 
   Map<int, CartModel> get items => _items;
 
   void addItem(Products product, int quantity) {
-    print(quantity);
     if (_items.containsKey(product.id!)) {
       var totalQuantity = 0;
       _items.update(product.id!, (value) {

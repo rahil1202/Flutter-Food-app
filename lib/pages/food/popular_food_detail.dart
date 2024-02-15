@@ -1,11 +1,10 @@
-import 'dart:convert';
-
 import 'package:ecomm_food_app/pages/cart/cart_page.dart';
 import 'package:ecomm_food_app/pages/home/main_food_page.dart';
 import 'package:ecomm_food_app/utils/app_constants.dart';
 import 'package:ecomm_food_app/utils/dimensions.dart';
 import 'package:ecomm_food_app/widgets/app_icon.dart';
 import 'package:ecomm_food_app/widgets/small_text.dart';
+// ignore: unnecessary_import
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,7 +19,7 @@ import '../../widgets/expandable_text_widget.dart';
 class PopularFoodDetail extends StatelessWidget {
   final int pageId;
 
-  const PopularFoodDetail({Key? key, required this.pageId}) : super(key: key);
+  const PopularFoodDetail({super.key, required this.pageId});
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +56,7 @@ class PopularFoodDetail extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: (() => Get.to(MainFoodPage())),
-                    child: AppIcon(
+                    child: const AppIcon(
                       icon: Icons.arrow_back_ios,
                     ),
                   ),
@@ -68,7 +67,7 @@ class PopularFoodDetail extends StatelessWidget {
                           onTap: () {
                             Get.to(() => CartPage());
                           },
-                          child: AppIcon(
+                          child: const AppIcon(
                             icon: Icons.shopping_cart_outlined,
                           ),
                         ),

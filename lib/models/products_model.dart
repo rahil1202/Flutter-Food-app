@@ -1,4 +1,5 @@
 class ProductModel {
+  // ignore: unused_field
   int? _totalSize;
   int? _typeId;
   int? _offset;
@@ -11,10 +12,10 @@ class ProductModel {
       required typeId,
       required offset,
       required products}) {
-    this._totalSize = totalSize;
-    this._typeId = typeId;
-    this._offset = offset;
-    this._products = products;
+    _totalSize = totalSize;
+    _typeId = typeId;
+    _offset = offset;
+    _products = products;
   }
 
   ProductModel.fromJson(Map<String, dynamic> json) {

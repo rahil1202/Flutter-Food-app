@@ -9,7 +9,6 @@ import 'package:ecomm_food_app/widgets/small_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({Key? key}) : super(key: key);
@@ -70,7 +69,7 @@ class CartPage extends StatelessWidget {
                       return ListView.builder(
                           itemCount: cartController.getItems.length,
                           itemBuilder: (_, index) {
-                            return Container(
+                            return SizedBox(
                               height: 100,
                               width: double.maxFinite,
                               child: Row(
@@ -119,7 +118,7 @@ class CartPage extends StatelessWidget {
                                           children: [
                                             BigText(
                                               text: cartController
-                                                  .getItems[index]!.price
+                                                  .getItems[index].price
                                                   .toString(),
                                               color: Colors.redAccent,
                                             ),
